@@ -10,16 +10,13 @@ class SupermarketTest {
     @Test
     void getArtikli() {
         Artikl a = new Artikl ("bajk", 200, "1");
-        assertAll("naziv", () -> assertEquals ("bajk", a.getNaziv()));
+        assertAll("naziv", () -> assertEquals ("bajk", a.getNaziv()), () -> assertEquals(200, a.getCijena()));
     }
 
     @Test
     void izbaciArtiklSaKodom() {
 
-    }
-
-    @Test
-    void dodajArtikl() {
 
     }
+
 }
