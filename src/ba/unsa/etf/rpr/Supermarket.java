@@ -34,7 +34,7 @@ public class Supermarket {
     public void dodajArtikl(Artikl a) {
         if(brojArtikala <= MAX_BR_ARTIKALA) return;
         supermarket[brojArtikala] = a;
-        brojArtikala = brojArtikala - 1;
+        brojArtikala = brojArtikala + 1;
     }
 
 }
