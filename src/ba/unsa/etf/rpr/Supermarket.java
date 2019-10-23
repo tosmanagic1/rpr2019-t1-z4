@@ -15,6 +15,10 @@ public class Supermarket {
         return supermarket;
     }
 
+    public int getBrojArtikala () {
+        return brojArtikala;
+    }
+
     public Artikl izbaciArtiklSaKodom(String kod) {
         Artikl izbaceniAritkl = new Artikl();
         for(int i = 0; i < brojArtikala;i++){
@@ -32,7 +36,7 @@ public class Supermarket {
 
 
     public void dodajArtikl(Artikl a) {
-        if(brojArtikala <= MAX_BR_ARTIKALA) return;
+        if(brojArtikala >= MAX_BR_ARTIKALA) return;
         supermarket[brojArtikala] = a;
         brojArtikala = brojArtikala + 1;
     }

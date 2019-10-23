@@ -13,8 +13,13 @@ class SupermarketTest {
         assertAll("naziv", () -> assertEquals ("bajk", a.getNaziv()), () -> assertEquals(200, a.getCijena()));
     }
 
+
     @Test
-    void izbaciArtiklSaKodom() {
+    void dodajArtikl() {
+        Supermarket s = new Supermarket();
+        s.dodajArtikl(new Artikl("Biciklo", 1000, "1"));
+        s.dodajArtikl(new Artikl("Biciklo", 1000, "2"));
+        assertEquals(2, s.getBrojArtikala());
 
 
     }
