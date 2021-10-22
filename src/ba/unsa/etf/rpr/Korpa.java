@@ -40,4 +40,7 @@ public class Korpa {
         return ukupnaCijena;
     }
 
+    public Artikl[] getKorpa() {
+        return korpa;
+    }
 }
