@@ -41,4 +41,12 @@ public class Supermarket {
         brojArtikala = brojArtikala + 1;
     }
 
+    public void dodajArtikl(String s, int n, String k) {
+        if(brojArtikala >= MAX_BR_ARTIKALA) return;
+        supermarket[brojArtikala].setCijena(n);
+        supermarket[brojArtikala].setKod(k);
+        supermarket[brojArtikala].setNaziv(s);
+        brojArtikala = brojArtikala + 1;
+    }
+
 }
