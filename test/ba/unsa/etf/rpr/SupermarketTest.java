@@ -22,17 +22,17 @@ class SupermarketTest {
         assertTrue(s.getBrojArtikala()==2);
     }
 
-   /* @Test
-    void izbaciArtiklSaKodom() {
+   @Test
+    void izbaciArtiklSaKodom1() {
         Supermarket s = new Supermarket();
         s.dodajArtikl("biciklo", 2000, "1");
         s.dodajArtikl("biciklo", 4000, "2");
         s.izbaciArtiklSaKodom("1");
         assertEquals(1, s.getBrojArtikala());
-    }*/
+    }
 
     @Test
-    void izbaciArtiklSaKodom() {
+    void izbaciArtiklSaKodom2() {
         Supermarket s = new Supermarket();
         s.dodajArtikl(new Artikl("biciklo", 2000, "1"));
         s.dodajArtikl(new Artikl("biciklo", 4000, "2"));
