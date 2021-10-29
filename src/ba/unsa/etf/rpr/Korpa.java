@@ -43,4 +43,8 @@ public class Korpa {
     public Artikl[] getKorpa() {
         return korpa;
     }
+
+    public int getBrojArtikala() {
+        return brojArtikala;
+    }
 }
